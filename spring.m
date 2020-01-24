@@ -16,10 +16,10 @@ sim.steps = 10000; %number of iterations to perform
 particles.N = 10; %Number of particles
 particles.m = 1; %mass of each particle
 particles.fixed = boolean(zeros(1,particles.N)); %logical array of which particles are fixed
-%particles.fixed(1) = true;
-%particles.fixed(particles.N) = true;
+particles.fixed(1) = true;
+particles.fixed(particles.N) = true;
 %particles.fixed(5) = true;
-particles.indexToExamine = 5;%index of particle to exam in detail (1 - N)
+particles.indexToExamine = 3;%index of particle to exam in detail (1 - N)
 
 %initialize other variables and create figure for plotting
 figure('units','normalized','outerposition',[0 0 1 1]) 
